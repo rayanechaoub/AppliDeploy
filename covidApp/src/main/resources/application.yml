@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://tcp-mo2.mogenius.io:19786/Covid
+    username: posgres-user
+    password: 3yffE2QWppxN1AWkX8N0GQHYOZyCj6
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    enabled: false
+
+
+
